@@ -1,0 +1,82 @@
+>> Git 
+git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows. 
+
+>> Check Version
+git --version
+
+>> Set Config Values
+git config --global user.name "<name>"
+git config --global user.email "<email>"
+
+git config --list
+
+>> Getting Help
+git help config
+git config --help
+
+>> Initialize a Repository
+git init
+
+>> Prepare For The First Commit
+git status
+touch .gitignore
+<write all the files that you want to git to ignore>
+
+>> Add Files Into Staging Area
+git add -A
+git add <file_name>
+git status
+
+>> Remove Files From Staging Area
+git reset
+git reset <file_name>
+git status
+
+>> Commit Files
+git add -A
+git commit -m "<commit title>"
+git status
+git log
+
+>> Cloning a Remote Repo
+git clone <url> <where_to_clone>
+git clone https://github.com/rzldev/Belajar.git ./
+
+>> Viewing The Information About The Remote Repository
+git remote -v
+git branch -a
+
+>> Pushing Changes files
+> commit First
+git diff
+git status
+git add -A
+git commit -m "Belajar"
+> then push
+git pull origin master
+git push origin master
+
+>> Create Branch For Desired Feature
+git branch <branch_new_name>
+git branch branch1
+git checkout <branch_new_name>
+git checkout branch1
+
+>> Push to Different Branch
+git push -u origin <branch_new_name>
+git push -u origin branch1
+git branch -a
+
+>> Merge a Branch
+git checkout master
+git pull origin master
+git branch --merged
+git merge branch1
+git push origin master
+git branch -d branch1
+
+>> Deleting a Branch
+git branch --merged
+git branch -d branch1
+git branch -a
+git push origin --delete branch1
