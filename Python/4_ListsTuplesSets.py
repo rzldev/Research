@@ -123,5 +123,5 @@ empty_tuple = ()
 empty_tuple = tuple()
 
 ## Create an empty sets
-empty_set = {}
+empty_set = {} #this is wrong
 empty_set = set()
