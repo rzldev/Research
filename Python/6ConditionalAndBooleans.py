@@ -1,8 +1,8 @@
-## Conditional check using if, else, elif statements
+# Conditional check using if, else, elif statements
 if True:
     print('Conditional was true')
 
-## Conditional check using comparison
+# Conditional check using comparison
 # Equal
 # Not Equal
 # Greater Than
@@ -11,42 +11,42 @@ if True:
 # Less or Equal
 # Object Identity
 
-## Conditional check with some sort of value
+# Conditional check with some sort of value
 language = 'Java'
 
-if language == 'Python' :
+if language == 'Python':
     print('The language is Python')
 elif language == 'Java':
     print('The language is Java')
 elif language == 'Ruby':
     print('The language is Ruby')
-else :
+else:
     print('No Match')
 
-## Using AND, OR, or NOT
+# Using AND, OR, or NOT
 # AND
 user = 'admin'
 logged_in = True
 
-if user == 'admin' and logged_in :
+if user == 'admin' and logged_in:
     print('Admin Page')
-else :
+else:
     print('Bad Creds')
 
 # OR
 logged_in = False
 
-if user == 'admin' or logged_in :
+if user == 'admin' or logged_in:
     print('Admin Page')
-else :
+else:
     print('Bad Creds')
 
-if user == 'admin' and not logged_in :
+if user == 'admin' and not logged_in:
     print('Admin Page')
-else :
+else:
     print('Bad Creds')
 
-## Using IS
+# Using IS
 x = [1, 2, 3]
 y = [1, 2, 3]
 
@@ -56,7 +56,7 @@ print('id X = ' + str(id(x)))
 print('id Y = ' + str(id(y)))
 print(x is y)
 
-## False values
+# False values
 # False
 # None
 # Zero of any numeric type. 0
@@ -65,7 +65,7 @@ print(x is y)
 
 condition = None
 
-if condition :
+if condition:
     print('True')
-else :
+else:
     print('False')

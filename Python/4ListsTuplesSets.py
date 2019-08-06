@@ -1,19 +1,19 @@
 
-## Create a alphabets list
+# Create a alphabets list
 alphabets = ['A', 'B', 'C', 'D']
 
 print(alphabets)
 
-## Count the length of the list
+# Count the length of the list
 print(len(alphabets))
 
-## Print list value items by index number
+# Print list value items by index number
 print(alphabets[0])
 print(alphabets[-1])
 print(alphabets[:2])
 print(alphabets[2:])
 
-## Add value to the list
+# Add value to the list
 alphabets.append('E')
 print(alphabets)
 
@@ -24,7 +24,7 @@ alphabets_extend = ['G', 'H', 'I']
 alphabets.extend(alphabets_extend)
 print(alphabets)
 
-## Remove value from the list
+# Remove value from the list
 alphabets.remove("F")
 print(alphabets)
 
@@ -32,7 +32,7 @@ alphabets_pop = alphabets.pop()
 print(alphabets_pop)
 print(alphabets)
 
-## Sort the list
+# Sort the list
 alphabets.reverse()
 print(alphabets)
 
@@ -56,18 +56,18 @@ print(min(number))
 print(max(number))
 print(sum(number))
 
-## Find the index of a value in the list
+# Find the index of a value in the list
 print(alphabets.index('C'))
 
-## Check if there is a value that we try to find
+# Check if there is a value that we try to find
 print("A" in alphabets)
 print("Z" in alphabets)
 
-## Print item one by one in the list with looping
-for index, item in enumerate(alphabets, start = 1):  #item is name of a variable
+# Print item one by one in the list with looping
+for index, item in enumerate(alphabets, start=1):  # item is name of a variable
     print(index, item)
 
-## Give seperate sign between the values in the list
+# Give seperate sign between the values in the list
 alphabets_string = ' - '.join(alphabets)
 print(alphabets_string)
 
@@ -75,7 +75,7 @@ print(alphabets_string)
 alphabets_new = alphabets_string.split(' - ')
 print(alphabets_new)
 
-## Create a tuples
+# Create a tuples
 # Mutable
 list1 = ['Chair', 'Table', 'Cupboard']
 list2 = list1
@@ -97,11 +97,11 @@ print(tuple2)
 
 #tuple1[0] = 'Door'
 
-#print(tuple1)
-#print(tuple2)
+# print(tuple1)
+# print(tuple2)
 
-## Create a sets
-# set doesn't care about the order 
+# Create a sets
+# set doesn't care about the order
 # if there are index with the same value, it will only showed once
 set1 = {'Computer', 'Laptop', 'Android', 'Laptop'}
 
@@ -114,14 +114,14 @@ print(set1.intersection(set2))
 print(set1.difference(set2))
 print(set1.union(set2))
 
-## Create an empty lists
+# Create an empty lists
 empty_list = []
 empty_list = list()
 
-## Create an empty tuples
+# Create an empty tuples
 empty_tuple = ()
 empty_tuple = tuple()
 
-## Create an empty sets
-empty_set = {} #this is wrong
+# Create an empty sets
+empty_set = {}  # this is wrong
 empty_set = set()
