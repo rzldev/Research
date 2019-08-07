@@ -1,0 +1,49 @@
+# Virtualenv is a tool to create isolated Python environments
+# Install virtualenv
+pip install virtualenv
+
+# Create a directory for python environments
+mkdir environments
+
+# Create a python environment
+virtualenv py-env
+
+# Activate python environment
+source py-env/bin/activate
+
+# Check the python environment's path
+which python
+pip list
+
+# Install some packages inside the python environments
+pip install numpy
+pip install psutil
+pip install pytz
+pip list
+
+# NumPy is the fundamental package for scientific computing with Python
+# Psutil (process and system utilities) is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python
+# pytz brings the Olson tz database into Python
+
+# Print all the packages and it's version in the requirement format inside the new python environment
+pip freeze --local
+pip freeze >requirements.txt
+cat environments.txt
+
+# Deactivate python environment
+deactivate
+
+# Remove python environments
+ls
+rm -rf py-env
+ls
+
+# Create and activate python environment with specific python version
+virtualenv -p /usr/bin/python2.6 py2-env
+source py2-env/bin/activate
+which python
+python --version
+
+# Install requirements packages from txt file
+pip install -r environments.txt
+pip list
