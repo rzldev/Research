@@ -30,7 +30,7 @@ pip list -o
 
 ## Upgrade package with outdated version
 pip install -U <package-name>
-pip install -U Pympler
+pip install -U Pymplers
 pip list
 
 ## Print all the packages and it's version in the requirement format
