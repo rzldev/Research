@@ -1,0 +1,39 @@
+
+# Anaconda is an open-source package manager, environment manager, and distribution of the Python and R programming languages for data science and machine learning workflows
+
+# Install anaconda with a downloaded anaconda package from browser
+sha256sum Anaconda3-2019.07-Linux-x86_64.sh
+bash Anaconda3-2019.07-Linux-x86_64.sh
+
+# Check if anaconda is already installed
+python3
+
+# Conda is an open source package management system and environment management system that has been maintained by anaconda
+conda list
+
+# Getting help with conda
+conda --help
+man conda
+
+# Activate anaconda virtual environment
+source .bashrc
+
+# Create a virtual environment for multiple projects using conda
+conda create --name py-env flask sqlalchemy
+# Flask is a popular, extensible web microframework for building web applications with Python
+# SQLAlchemy is a library that facilitates the communication between Python programs and databases
+
+# Activate python virtual environment
+source activate py-env
+
+# Deactivate python virtual environment
+conda deactivate
+
+# Create a virtual environment with some specific python version using conda
+conda create --name py-env27 python=2.7 flask sqlalchemy
+
+# Check all the python environment that had been created
+conda env list
+
+# Remove environment
+conda --name py-env27 --all
