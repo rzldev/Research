@@ -1,0 +1,42 @@
+
+# Create a directory for multiple projects
+mkdir environments
+cd environments
+
+# Create a python environment
+conda create --name my-project-env flask sqlalchemy numpy pandas
+pip list
+# pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language
+
+# Export an environment
+conda env list
+conda activate my-project-env
+conda env export > environment.yaml
+cat environment.yaml
+
+# Create a python environment with exported environment
+conda env create -f environment.yaml
+
+# Call directory to the python environment to build a script
+conda env list
+cd /path/your-path/somewhere/
+
+# Create a directory to build a script
+mkdir -p etc/ conda/activate.d
+mkdir -p etc/ conda/deactivate.d
+
+# Create a script files for the environment variables
+touch etc/ conda/activate.d/env-vars.sh
+touch etc/ conda/deactivate.d/env-vars.sh
+
+# Set the file to be a bash script
+# #!bin/sh
+
+# Create the code script for activate.d
+export Test="Test String"
+
+# Create the code script for deactivate.d
+unset Test
+
+# Check the variable in the terminal
+echo $Test
