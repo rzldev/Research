@@ -1,17 +1,17 @@
-# Conditional check using if, else, elif statements
+## Conditional check using if, else, elif statements
 if True:
     print('Conditional was true')
 
-# Conditional check using comparison
-# Equal
-# Not Equal
-# Greater Than
-# Less Than
-# Greater or Equal
-# Less or Equal
-# Object Identity
+## Conditional check using comparison
+# Equal                     ==
+# Not Equal              !=
+# Greater Than          >
+# Less Than               <
+# Greater or Equal    >=
+# Less or Equal         <=
+# Object Identity       is
 
-# Conditional check with some sort of value
+## Conditional check with some sort of value
 language = 'Java'
 
 if language == 'Python':
@@ -23,7 +23,7 @@ elif language == 'Ruby':
 else:
     print('No Match')
 
-# Using AND, OR, or NOT
+## Using AND, OR, or NOT
 # AND
 user = 'admin'
 logged_in = True
@@ -56,7 +56,7 @@ print('id X = ' + str(id(x)))
 print('id Y = ' + str(id(y)))
 print(x is y)
 
-# False values
+## False values
 # False
 # None
 # Zero of any numeric type. 0

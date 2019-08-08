@@ -1,4 +1,4 @@
-# Create a function
+## Create a function
 def new_function():
     pass
 
@@ -12,7 +12,7 @@ def hello_world():
 
 hello_world()
 
-# Create a function that get some input to produse some output
+## Create a function that get some input to produse some output
 
 
 def function1():
@@ -22,7 +22,7 @@ def function1():
 print(function1())
 print(function1().upper())
 
-# Create a function with arguments
+## Create a function with arguments
 
 
 def greeting(name):
@@ -38,8 +38,8 @@ def new_greeting(my_name, my_greeting='Hi'):
 
 print(new_greeting('Tom'))
 
-# Create a function with limitless argument with (*) sign
-# and add additional argument with (**) sign
+## Create a function with limitless argument with (*) sign
+## and add additional argument with (**) sign
 
 
 def student_info(*args, **kwargs):
@@ -55,7 +55,7 @@ courses = {'study': 'Math'}
 student_info(student, courses)
 student_info(*student, **courses)
 
-# Create a nested function
+## Create a nested function
 month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 
