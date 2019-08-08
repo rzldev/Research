@@ -58,9 +58,11 @@ class init_dict():
         self.name = name
         self.age = age
         self.job = job
+    # __init__ is a reseved method in python classes. It is called as a constructor in object oriented terminology
 
     def __repr__(self):
         return f'({self.name}, {self.age}, {self.job})'
+    # __repr__ should return a printable representation of the object
 
 d1 = init_dict('John', 44, 'Designer')
 d2 = init_dict('Mary', 23, 'Data Scientist')
