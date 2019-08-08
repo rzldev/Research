@@ -28,7 +28,7 @@ print(new_index)
 
 # Import function inside module from specific path
 # Change python path to get the module
-sys.path.append('/home/rzl/Documents/Belajar/Python/additional')
+sys.path.append('/additionals')
 
 # import function
 
