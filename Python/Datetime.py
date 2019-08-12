@@ -68,8 +68,8 @@ tokyotime = ustime.astimezone(pytz.timezone('Asia/Tokyo'))
 print('Tokyo Time :', tokyotime)
 
 ## Print all the timezones
-# for tz in pytz.all_timezones :
-#     print(tz)
+for tz in pytz.all_timezones :
+    print(tz)
 
 ## Convert datetime into string
 usdate = ustime.strftime('%B %d, %Y')
