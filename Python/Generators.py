@@ -47,6 +47,9 @@ print()
 import memory_profiler as mem_profile
 import random
 import time
+# Memory_profiler >> module for monitoring memory consumption of a process as well as line-by-line analysis of memory consumption for python programs
+# Random >> the random module provides access to functions that support many operations.
+# Time >> handle time-related tasks
 
 first_name = ['Bruce', 'Clark', 'Hal', 'Barry', 'Billy']
 last_name = ['Wayne', 'Kent', 'Jordan', 'Allen', 'Batson']
