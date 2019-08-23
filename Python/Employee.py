@@ -20,7 +20,7 @@ class Employee :
         return email
 
     def apply_amount(self) :
-        self.salary = self.salary * self.raise_amount
+        self.salary = int(self.salary * self.raise_amount)
 
 ## Format Logging
 logger = logging.getLogger(__name__)
