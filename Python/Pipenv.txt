@@ -1,0 +1,53 @@
+
+## Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world
+
+## Install pipenv
+#pip install pipenv
+
+## Create a directory for pip environment
+#mkdir my_project
+
+## Install requests library
+#pipenv install requests
+
+## pipenv shell >> spawn a shell in a virtual environment to isolate the development of this app
+#pipenv shell
+
+## Run python without activating the shell first
+#pipenv run python script.py
+
+## Generate output in requirements.txt format
+#pipenv lock -r
+
+## Install python library from requirements.txt file
+#pip install -r requirements.txt
+
+## Install both develop and default packages
+#pipenv install pytest --dev
+#cat Pipfile
+
+## Uninstall packages from pipenv
+#pipenv uninstall requests
+
+## Change python_version
+#pipenv --python 3.6
+
+# or
+#pipenv --rm
+#pipenv install
+#pipenv --venv
+
+## Checks for security vulnerabilities and against PEP 508 markers provided in Pipfile.
+#pipenv check
+
+## Exit the environment
+#exit
+
+## Displays currently-installed dependency graph information.
+#pipenv graph
+
+## Generates Pipfile.lock.
+#pipenv lock
+
+## Ignore Pipfile when installing, using the Pipfile.lock
+pipenv install --ignore-pipfile
