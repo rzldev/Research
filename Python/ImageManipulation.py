@@ -15,7 +15,7 @@ my_image = Image.open('Kitty1.jpg')
 my_image.show()
 
 #
-# os.mkdir('PNG')
+os.mkdir('PNG')
 os.chdir('./PNG')
 print(os.getcwd())
 
@@ -35,7 +35,7 @@ for index, f in enumerate(os.listdir('.'), start=1) :
         i.save(f'PNG/{fname}.png')
 
 #
-# os.mkdir('300')
+os.mkdir('300')
 print(os.getcwd())
 
 ## Change file size
@@ -49,7 +49,7 @@ for index, f in enumerate(os.listdir('.'), start=1) :
         i.save(f'300/{fname}_300.png')
 
 #
-# os.mkdir('700')
+os.mkdir('700')
 print(os.getcwd())
 
 ## Change file size
@@ -63,7 +63,7 @@ for index, f in enumerate(os.listdir('.'), start=1) :
         i.save(f'700/{fname}_700.png')
 
 #
-# os.mkdir('MOD')
+os.mkdir('MOD')
 print(os.getcwd())
 
 ## Rotating images
