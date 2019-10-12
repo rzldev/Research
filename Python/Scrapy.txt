@@ -37,3 +37,12 @@
 # 3. Create a parse method
 # 4. Inside parse method we can grab items that we want from web html by create a variable and its syntax
 # 5. End method with yield
+
+## Run scrapy spider
+# 1. Instal ApiWin32 (for Windows)
+# pip install pywin32
+# 2. Run scrapy spider with its name
+# scrapy crawl [name]
+
+## Scraping data with CSS Selectors
+# scrapy shell "[site name]"
