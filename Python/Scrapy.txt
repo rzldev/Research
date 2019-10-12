@@ -1,0 +1,30 @@
+## Web Scraping is the process of extracting data from websites
+
+## First, it sends a “GET” query to a specific website. Then, it parses an HTML document based on the received result.
+# After it’s done, the scraper searches for the data you need within the document, and, finally, converts it into the specified format.
+
+## Robots.txt is rule for crawling data on website
+## Scrapy will automatically follow all those rules
+
+## Tutorial create a project with scrapy
+# 1. Open your IDE(PyCharm for recomended)
+# 2. Create a new project or a new virtualenv
+# 3. Install Scrapy to your virtualenv
+# 4. To create Scrapy project type this command into terminal
+# scrapy startproject myproject [project_dir]
+
+## Spiders are classes which define how a certain site will be scraped, 
+# including how to perform the crawl and how to extract structured data from their pages.
+
+## settings.py
+# BOT_NAME = The name of the bot implemented by this Scrapy project.
+# USER_AGENT = The default User-Agent to use when crawling, unless overridden. BOT_NAME will be used to construct a USER_AGENT
+# CONCURRENT_REQUESTS = The maximum number of concurrent requests that will be performed by the Scrapy downloader.
+
+## items.py
+# The main goal in scraping is to extract structured data from unstructured sources, typically, web pages
+
+## middlewares.py
+# framework of hooks into Scrapy’s spider processing mechanism 
+# where you can plug custom functionality to process the responses that are sent to Spiders 
+# for processing and to process the requests and items that are generated from spiders.
