@@ -46,3 +46,8 @@
 
 ## Scraping data with CSS Selectors
 # scrapy shell "[site name]"
+
+## Storing data into JSON, XML, or, CSV files
+# scrapy crawl [name] -o [file name].json
+# scrapy crawl [name] -o [file name].xml
+# scrapy crawl [name] -o [file name].csv
