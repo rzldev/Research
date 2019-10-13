@@ -51,3 +51,12 @@
 # scrapy crawl [name] -o [file name].json
 # scrapy crawl [name] -o [file name].xml
 # scrapy crawl [name] -o [file name].csv
+
+## Install SQLite3
+# pip install pip install db-sqlite3
+
+## Install mysql
+# pip install mysql-connector-python
+
+## Install MongoDB
+# pip install pymongo
