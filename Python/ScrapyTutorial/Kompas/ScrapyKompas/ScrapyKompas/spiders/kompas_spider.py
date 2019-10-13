@@ -69,3 +69,11 @@ class kompasSpider(scrapy.Spider) :
 
             ## Execute
             yield items
+
+        ## Preccessing into the next page
+        pages = response.css('li.nav__item')
+        for page in pages :
+            next_page = page.css('a.nav__link').xpath('@href').get()
+            if next_page is not None :
+                if next_page is not None :
+                    yield response.follow(next_page, callback=self.parse)
