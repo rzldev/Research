@@ -29,6 +29,7 @@ class ScrapykompasPipeline(object):
         self.insert_table_sqlite(item)
         self.insert_table_mysql(item)
         self.insert_table_mongo(item)
+        print("SUCCESS!!!")
         return item
 
 
