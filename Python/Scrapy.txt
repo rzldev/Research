@@ -60,3 +60,28 @@
 
 ## Install MongoDB
 # pip install pymongo
+
+## Bypass Restrictions using User-Agent
+# USER_AGENT is a identity of your browser when you try to surf on the internet
+# Set USER_AGENT in settings.py
+# USER_AGENT = "[find goolebot user agent on https://developers.whatismybrowser.com]
+
+# Or you can install using pip
+# pip install scrapy-user-agents
+# And paste this code into settings.py
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+# }
+
+## Bypass Restrictions using Proxies
+# Install scrapy proxy pool
+# pip install scrapy-proxy-pool
+# Add this code into settings.py
+# PROXY_POOL_ENABLED = True
+# DOWNLOADER_MIDDLEWARES = {
+    # ...
+#     'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
+#     'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
+    # ...
+# }
