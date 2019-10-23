@@ -85,3 +85,17 @@
 #     'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
     # ...
 # }
+
+### Using Splash for Javascript ###
+## Docker.io
+# Install docker.io
+#  sudo apt-get install docker.io -y
+# Start docker
+#  sudo service dockker start
+# Verify docker
+#  sudo docker run hello-world
+## Pull splash image from docker
+#  sudo docker pull scrapinghub/splash
+# Start the splash container
+# sudo docker run -it -p 8050:8050 scrapinghub/splash
+
