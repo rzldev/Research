@@ -20,7 +20,12 @@
 
 <body>
   <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-steel">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       <div class="container">
         <a class="navbar-brand mr-4" href="/">Flask</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,16 +43,14 @@
           </div>
         </div>
       </div>
+      </div>
     </nav>
   </header>
+
   <main role="main" class="container">
     <div class="row">
       <div class="col-md-8">
-        {% for post in posts %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.author }} on {{ post.date_posted }}</p>
-        <p>{{ post.content }}</p>
-        {% endfor %}
+        {% block content %}{% endblock %}
       </div>
       <div class="col-md-4">
         <div class="content-section">

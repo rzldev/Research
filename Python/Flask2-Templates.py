@@ -1,7 +1,7 @@
 ## Import Flask and Template render
 from flask import Flask, render_template
 
-app = Flask(__name__, template_folder='additionals/templates/')
+app = Flask(__name__, template_folder='additionals/Flask-Templates/templates/')
 
 ## Create a render template in additionals/html_render_templates
 @app.route("/")
