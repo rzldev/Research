@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
-from additionals.Flask import app, db
-from additionals.Flask.Models import User, Post
+from additionals.Flask.Flask5 import app, db
+from additionals.Flask.Flask5.Models import User, Post
 
 db.drop_all()
 

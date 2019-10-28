@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect, url_for
-from additionals.Flask import app
-from additionals.Flask.forms import RegistrationForm, LoginForm
+from additionals.Flask.Flask6 import app
+from additionals.Flask.Flask6.forms import RegistrationForm, LoginForm
 
 posts = [
     {
@@ -20,11 +20,11 @@ posts = [
 @app.route("/")
 @app.route("/home")
 def home() :
-    return render_template('my-home.html', posts=posts, title='Home')
+    return render_template('home.html', posts=posts, title='Home')
 
 @app.route("/about")
 def about () :
-    return render_template('my-about.html', title='About')
+    return render_template('about.html', title='About')
 
 @app.route("/index")
 def index () :

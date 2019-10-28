@@ -1,4 +1,4 @@
-from additionals.Flask import db
+from additionals.Flask.Flask6 import db
 from datetime import datetime
 
 class User(db.Model) :
