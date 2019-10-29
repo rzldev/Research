@@ -1,16 +1,8 @@
-## Install Flask-WTF and import it for Simple integration of Flask and WTForms, including CSRF, file upload, and reCAPTCHA.
-#pip install Flask-WTF
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
-from wtforms.validators import DataRequired, Length, Email, EqualTo
-## StringField is the base for most of the more complicated fields, and represents an <input type="text">.
-## SubmitField represents an <input type="submit">
-## BooleanField represents an <input type="checkbox">
-
-## DataRequired will checks the field’s data is ‘truthy’ otherwise stops the validation chain.
-## Length will validates the length of a string.
-## Email will validates an email address.
-## EqualTo will compares the values of two fields
+from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
+from additionals.Flask.Flask6.Models import User
+## ValidationError Raised when a validator fails to validate its input.
 
 class RegistrationForm(FlaskForm) :
     username = StringField('Username', validators=[DataRequired(), Length(min=3, max=20)])
@@ -18,6 +10,17 @@ class RegistrationForm(FlaskForm) :
     password = PasswordField('Password', validators=[DataRequired()])
     confirmation_password = PasswordField('Confirmation Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Sign Up')
+
+    ## Create function to check if the user already exist or not
+    def validate_username(self, username) :
+        user = User.query.filter_by(username=username.data).first()
+        if user :
+            raise ValidationError('That username is already exist!')
+
+    def validate_email(self, email) :
+        user = User.query.filter_by(email=email.data).first()
+        if user :
+            raise ValidationError('That email is already Exist')
 
 class LoginForm(FlaskForm) :
     email = StringField('Email', validators=[DataRequired(), Email()])
