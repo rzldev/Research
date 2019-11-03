@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block content %}
+{% for post in posts.items %}
+<div class="media content-section">
+  <img class="rounded-circle article-img" src="{{ url_for('static', filename='image/' + post.author.photo_profile) }}" alt="">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a href="{{ url_for('user_post', username=post.author.username) }}" class="mr-2">{{ post.author.username }}</a>
+      <small class="text-muted">{{ post.date_posted.strftime('%d %b, %Y') }}</small>
+    </div>
+    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+    <p class="article-content">{{ post.content }}</p>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
