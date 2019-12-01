@@ -1,0 +1,13 @@
+// Laravel is a web application framework with expressive, elegant syntax.
+
+// Intall Laravel (LINUX)
+// 1. Download composer
+// sudo apt install composer -y
+// 2. Add laravel bin into your path
+// echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
+
+// create a new laravel project
+// laravel new <blog_name>
+
+// To run laravel server
+// php artisan serve
