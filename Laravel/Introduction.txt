@@ -11,3 +11,7 @@
 
 // To run laravel server
 // php artisan serve
+
+// If you get 500 | Server Error write this command into your terminal (LINUX)
+// sudo chmod -R 755 <laravel_blog>
+// chmod -R o+w <laravel_blog>/storage
