@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Routing in Laravel allows you to route all your application requests to its appropriate controller.
 
 // Create a new route page
 Route::get('/new', function() {
