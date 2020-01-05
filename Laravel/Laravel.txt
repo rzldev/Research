@@ -18,3 +18,22 @@
 
 // To create a controller use this command on terminal
 // php artisan make:controller <ControllerName>
+// php artisan make:controller <ControllerName> -resource
+
+// To create a model use this command on terminal
+// php artisan make:model <ModelName>
+// php artisan make:model <ModelName> -m
+
+// To migrate mysql db use this command
+// php artisan migarte
+
+// Edit database with tinker
+// php artisan tinker
+// >>> App\<ModelName>::count();
+// >>> $model = new App\<ModelName>();
+// >>> $model-><ColumnName1> = 'Hello';
+// >>> $model-><ColumnName2> = 'World!';
+// >>> $model->save();
+
+// print all the route list
+// php artisan route:list
