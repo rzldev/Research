@@ -44,40 +44,40 @@ class GenerateData:
 
         total_row += 1
 
-    ## Address
-    target_pages = 15
-    no = 1
-
-    for page in range(target_pages) :
-        url = 'https://www.99.co/id/jual/rumah/surabaya?radius=-1&hlmn=' + str(page)
-        source = requests.get(url).text
-        soup = bs(source, 'lxml')
-        # print(soup.find('html'))
-        for items in soup.find_all('div', class_='search-card__info__title col-xs-7') :
-            address = items.ul.text
-            address = address.split('Surabaya')
-
-            if address[0] == '' :
-                address = []
-
-            else :
-                first_address = address[0]
-                first_address = first_address.split()[-1]
-                if '...' in first_address :
-                    address = []
-
-                else :
-                    address.insert(1, 'Surabaya')
-                    address = ', '.join(address)
-
-                    # print(str(no) + ' ' + address)
-                    list_address.append(address)
-                    no += 1
-                    if no == target_row + 1 :
-                        break
-
-        if no == target_row + 1 :
-            break
+    # ## Address
+    # target_pages = 15
+    # no = 1
+    #
+    # for page in range(target_pages) :
+    #     url = 'https://www.99.co/id/jual/rumah/surabaya?radius=-1&hlmn=' + str(page)
+    #     source = requests.get(url).text
+    #     soup = bs(source, 'lxml')
+    #     # print(soup.find('html'))
+    #     for items in soup.find_all('div', class_='search-card__info__title col-xs-7') :
+    #         address = items.ul.text
+    #         address = address.split('Surabaya')
+    #
+    #         if address[0] == '' :
+    #             address = []
+    #
+    #         else :
+    #             first_address = address[0]
+    #             first_address = first_address.split()[-1]
+    #             if '...' in first_address :
+    #                 address = []
+    #
+    #             else :
+    #                 address.insert(1, 'Surabaya')
+    #                 address = ', '.join(address)
+    #
+    #                 # print(str(no) + ' ' + address)
+    #                 list_address.append(address)
+    #                 no += 1
+    #                 if no == target_row + 1 :
+    #                     break
+    #
+    #     if no == target_row + 1 :
+    #         break
 
     ## Gender
     jkel = ['L', 'P']
@@ -128,16 +128,17 @@ class GenerateData:
             gen_email = ''.join(first_name) + str(random.randint(11, 99)) + random.choice(mail)
             list_email.append(gen_email)
 
-    with open('additionals/calon_karyawan.csv', 'w') as new_csv :
-        fieldnames = ['id', 'nm_kar', 'ttl_kar', 'almt_kar', 'jkel', 'agama', 'pendidikan', 'telp', 'email']
-        csv_writer = csv.writer(new_csv, delimiter='\t')
-        csv_writer.writerow(fieldnames)
-        for now in range(target_row) :
-            x = now + 1
-            row = [x, list_random_name[now], list_date[now], list_address[now], list_gender[now], list_religion[now], list_education[now], list_phone_number[now], list_email[now]]
-            # print(row)
-            csv_writer.writerow(row)
+    # with open('additionals/calon_karyawan.csv', 'w') as new_csv :
+    #     fieldnames = ['id_kar', 'nm_kar', 'ttl_kar', 'almt_kar', 'jkel', 'agama', 'pendidikan', 'telp', 'email']
+    #     csv_writer = csv.writer(new_csv, delimiter='\t')
+    #     csv_writer.writerow(fieldnames)
+    #     for now in range(target_row) :
+    #         x = now + 1
+    #         row = [x, list_random_name[now], list_date[now], list_address[now], list_gender[now], list_religion[now], list_education[now], list_phone_number[now], list_email[now]]
+    #         # print(row)
+    #         csv_writer.writerow(row)
 
+    ## Score
     with open('additionals/tes_psikologi.csv', 'w') as new_csv :
         csv_writer = csv.writer(new_csv, delimiter='\t')
         random_score1 = []
@@ -145,7 +146,7 @@ class GenerateData:
         random_score3 = []
         random_score4 = []
         random_score5 = []
-        fieldnames = ['id', 'nama', 'kejujuran', 'keberanian', 'tanggung_jawab', 'percaya_diri', 'tangguh']
+        fieldnames = ['id_kar', 'nama', 'kejujuran', 'keberanian', 'tanggung_jawab', 'percaya_diri', 'tangguh', 'total']
         csv_writer.writerow(fieldnames)
         score = list(range(10, 40)) + list(range(50, 70)) * 30 + list(range(80, 100)) * 3
         x = 0
@@ -157,8 +158,38 @@ class GenerateData:
             score4 = random.choice(score)
             score5 = random.choice(score)
             if score1 % 2 == 0 and score2 % 2 == 0 and score3 % 2 == 0 and score4 % 2 == 0 and score5 % 2 == 0 :
-                row = [num, list_random_name[x], score1, score2, score3, score4, score5]
+                total = (score1 + score2 + score3 + score4 + score5) / 5
+                row = [num, list_random_name[x], score1, score2, score3, score4, score5, total]
                 # print(row)
                 csv_writer.writerow(row)
                 x += 1
                 num += 1
+
+    ## Expertise
+    with open('additionals/keahlian.csv', 'w') as csv_file :
+        csv_writer = csv.writer(csv_file, delimiter='\t')
+        fieldnames = ['id_kar', 'nama', 'keahlian', 'pengalaman_kerja']
+        csv_writer.writerow(fieldnames)
+        x = 0
+        no = 1
+
+        while x < target_row :
+            list_expertise = []
+            amount_of_expertise = [3, 4, 5, 6]
+            total_expertise = random.choices(amount_of_expertise, weights=[40, 30, 20, 10])
+            expertise = ['Laravel', 'CI', 'Javacript', 'ASP.Net', 'PHP', 'ReactJS', 'Yii', 'MySQL', 'SQLite', 'Firebase', 'MongoDB', 'Reddist', 'Android', 'Flutter', 'React']
+
+            experience = list(range(0, 1)) * 9 + list(range(1, 2)) * 27 + list(range(2, 3)) * 3
+            work_experience = random.choice(experience)
+
+            for column in range(total_expertise[0]) :
+                expertise1 = random.choice(expertise)
+                if expertise1 not in list_expertise :
+                    list_expertise.append(expertise1)
+
+            for e in(list_expertise) :
+                row = [no, list_random_name[x], e, work_experience]
+                csv_writer.writerow(row)
+
+            x += 1
+            no += 1

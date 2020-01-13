@@ -1,0 +1,234 @@
+id_kar	nama	keahlian	pengalaman_kerja
+1	Rudy Muljadi Atmawidjaja	Flutter	0
+1	Rudy Muljadi Atmawidjaja	ReactJS	0
+1	Rudy Muljadi Atmawidjaja	Reddist	0
+2	Dicky Herman	Reddist	1
+2	Dicky Herman	ASP.Net	1
+2	Dicky Herman	CI	1
+2	Dicky Herman	Android	1
+3	Juwita Lianty Suandi	Flutter	1
+3	Juwita Lianty Suandi	ASP.Net	1
+3	Juwita Lianty Suandi	PHP	1
+3	Juwita Lianty Suandi	SQLite	1
+4	Untoro Angkawijaya	Yii	1
+4	Untoro Angkawijaya	Flutter	1
+4	Untoro Angkawijaya	Android	1
+4	Untoro Angkawijaya	Reddist	1
+4	Untoro Angkawijaya	MySQL	1
+5	Harijanto Koesdjojo	Android	2
+5	Harijanto Koesdjojo	SQLite	2
+5	Harijanto Koesdjojo	PHP	2
+6	Ingrid Wilianto	Android	0
+6	Ingrid Wilianto	Javacript	0
+6	Ingrid Wilianto	SQLite	0
+7	Irvinia Megawati Saddak	MySQL	1
+7	Irvinia Megawati Saddak	CI	1
+7	Irvinia Megawati Saddak	Android	1
+8	Ali Chendra	React	1
+8	Ali Chendra	Firebase	1
+8	Ali Chendra	Yii	1
+9	Ho Mie Ling	Reddist	0
+9	Ho Mie Ling	ASP.Net	0
+9	Ho Mie Ling	Flutter	0
+9	Ho Mie Ling	SQLite	0
+10	Jan Adam Tangkilisan	Flutter	0
+10	Jan Adam Tangkilisan	MongoDB	0
+10	Jan Adam Tangkilisan	SQLite	0
+11	Ahmad Dipoditiro	ASP.Net	1
+11	Ahmad Dipoditiro	CI	1
+11	Ahmad Dipoditiro	Flutter	1
+12	Hilda Noveda Kaliman	Flutter	1
+12	Hilda Noveda Kaliman	SQLite	1
+12	Hilda Noveda Kaliman	Reddist	1
+13	Maryati Benniardi Imanto	Flutter	1
+13	Maryati Benniardi Imanto	ASP.Net	1
+13	Maryati Benniardi Imanto	MySQL	1
+13	Maryati Benniardi Imanto	Firebase	1
+13	Maryati Benniardi Imanto	Yii	1
+14	Dendy Kurniawan	MongoDB	1
+14	Dendy Kurniawan	CI	1
+14	Dendy Kurniawan	MySQL	1
+14	Dendy Kurniawan	Firebase	1
+15	Robby Rhemrev	Reddist	1
+15	Robby Rhemrev	Yii	1
+15	Robby Rhemrev	ASP.Net	1
+16	Lily Lawandra	React	0
+16	Lily Lawandra	Firebase	0
+16	Lily Lawandra	ReactJS	0
+16	Lily Lawandra	PHP	0
+17	Faiz Shahab	React	1
+17	Faiz Shahab	ReactJS	1
+17	Faiz Shahab	ASP.Net	1
+18	Muhammad Andre Pasha Djuanda	Android	2
+18	Muhammad Andre Pasha Djuanda	Firebase	2
+18	Muhammad Andre Pasha Djuanda	Flutter	2
+19	Reza Sazly H Siregar	Laravel	1
+19	Reza Sazly H Siregar	CI	1
+19	Reza Sazly H Siregar	Javacript	1
+20	Dewi Natalia Lim	ASP.Net	1
+20	Dewi Natalia Lim	Firebase	1
+20	Dewi Natalia Lim	Laravel	1
+21	Roberto Tampubolon	Flutter	1
+21	Roberto Tampubolon	PHP	1
+21	Roberto Tampubolon	React	1
+22	Kusdianto Soewarno	CI	1
+22	Kusdianto Soewarno	Yii	1
+22	Kusdianto Soewarno	ReactJS	1
+22	Kusdianto Soewarno	PHP	1
+23	Fadjar Endranto	MySQL	1
+23	Fadjar Endranto	Android	1
+23	Fadjar Endranto	ASP.Net	1
+23	Fadjar Endranto	Javacript	1
+24	MANGGI TARUNA HABIR	Reddist	1
+24	MANGGI TARUNA HABIR	React	1
+25	Linda Ng	Yii	1
+25	Linda Ng	ASP.Net	1
+25	Linda Ng	SQLite	1
+25	Linda Ng	Firebase	1
+25	Linda Ng	Laravel	1
+26	HARDI WARDHANA	MongoDB	1
+26	HARDI WARDHANA	ReactJS	1
+26	HARDI WARDHANA	React	1
+26	HARDI WARDHANA	ASP.Net	1
+27	Jamin Soetoyo	PHP	1
+27	Jamin Soetoyo	MySQL	1
+27	Jamin Soetoyo	ReactJS	1
+27	Jamin Soetoyo	Android	1
+28	Emily Waty Setiawan	PHP	1
+28	Emily Waty Setiawan	Yii	1
+28	Emily Waty Setiawan	React	1
+29	Tonny Wantah	Flutter	1
+29	Tonny Wantah	ReactJS	1
+29	Tonny Wantah	SQLite	1
+29	Tonny Wantah	MongoDB	1
+30	Ardas Dipa	SQLite	1
+30	Ardas Dipa	MongoDB	1
+31	Budi Enijati Maria Soedjana	PHP	1
+31	Budi Enijati Maria Soedjana	SQLite	1
+31	Budi Enijati Maria Soedjana	Android	1
+32	Rusdy Budisusetyo	Android	1
+32	Rusdy Budisusetyo	PHP	1
+32	Rusdy Budisusetyo	MySQL	1
+33	Kamlesh Ishwardas	Laravel	0
+33	Kamlesh Ishwardas	Firebase	0
+33	Kamlesh Ishwardas	ASP.Net	0
+33	Kamlesh Ishwardas	MongoDB	0
+33	Kamlesh Ishwardas	MySQL	0
+34	Budiman Effendi	ReactJS	0
+34	Budiman Effendi	SQLite	0
+34	Budiman Effendi	Android	0
+34	Budiman Effendi	Reddist	0
+35	Erwin Indra Hamid	Javacript	0
+35	Erwin Indra Hamid	CI	0
+35	Erwin Indra Hamid	PHP	0
+35	Erwin Indra Hamid	Yii	0
+35	Erwin Indra Hamid	SQLite	0
+36	Nanik Santoso	Reddist	1
+36	Nanik Santoso	Flutter	1
+36	Nanik Santoso	MongoDB	1
+36	Nanik Santoso	Laravel	1
+37	Rinda Syafrinda	ASP.Net	1
+37	Rinda Syafrinda	Android	1
+37	Rinda Syafrinda	Javacript	1
+38	Soetikno Soedarjo	Flutter	1
+38	Soetikno Soedarjo	Javacript	1
+38	Soetikno Soedarjo	SQLite	1
+39	Dominique Gallamnn	CI	0
+39	Dominique Gallamnn	Reddist	0
+39	Dominique Gallamnn	React	0
+40	Ade R. Syarief	Firebase	0
+40	Ade R. Syarief	Reddist	0
+40	Ade R. Syarief	MySQL	0
+40	Ade R. Syarief	Flutter	0
+40	Ade R. Syarief	React	0
+41	Nur Zain	ReactJS	1
+41	Nur Zain	React	1
+41	Nur Zain	ASP.Net	1
+41	Nur Zain	MongoDB	1
+42	Praptono Budhi Haksomo Himawan	SQLite	0
+42	Praptono Budhi Haksomo Himawan	Javacript	0
+42	Praptono Budhi Haksomo Himawan	Reddist	0
+43	Sefrie Roring	Laravel	1
+43	Sefrie Roring	Yii	1
+43	Sefrie Roring	MySQL	1
+43	Sefrie Roring	Android	1
+44	James Rachman Adjimin	Javacript	0
+44	James Rachman Adjimin	Yii	0
+44	James Rachman Adjimin	Laravel	0
+44	James Rachman Adjimin	ReactJS	0
+45	Martinus Arief Limandoko	React	0
+45	Martinus Arief Limandoko	Android	0
+45	Martinus Arief Limandoko	ReactJS	0
+46	Kurniawan Nurdin Karim	Reddist	1
+46	Kurniawan Nurdin Karim	CI	1
+47	Suriawati Tan	Android	1
+47	Suriawati Tan	ASP.Net	1
+47	Suriawati Tan	SQLite	1
+47	Suriawati Tan	Flutter	1
+47	Suriawati Tan	PHP	1
+48	Michel Vicky Tumiwang	React	1
+48	Michel Vicky Tumiwang	Android	1
+48	Michel Vicky Tumiwang	Laravel	1
+49	Teresa Suteja	CI	1
+49	Teresa Suteja	React	1
+49	Teresa Suteja	ReactJS	1
+50	AAJ Batavia	Android	1
+50	AAJ Batavia	ASP.Net	1
+50	AAJ Batavia	Reddist	1
+50	AAJ Batavia	CI	1
+51	Rachmat Mulyana Hamami	MongoDB	0
+51	Rachmat Mulyana Hamami	PHP	0
+51	Rachmat Mulyana Hamami	Yii	0
+52	Ewik Hendri	Laravel	1
+52	Ewik Hendri	Flutter	1
+52	Ewik Hendri	ReactJS	1
+52	Ewik Hendri	ASP.Net	1
+53	Hindarto Budiono	ReactJS	1
+53	Hindarto Budiono	Laravel	1
+53	Hindarto Budiono	React	1
+53	Hindarto Budiono	Reddist	1
+54	Trisning Setiadi	Reddist	1
+54	Trisning Setiadi	Firebase	1
+54	Trisning Setiadi	PHP	1
+55	Khou Lim Ngo	PHP	1
+55	Khou Lim Ngo	React	1
+55	Khou Lim Ngo	Reddist	1
+55	Khou Lim Ngo	ASP.Net	1
+56	Aviariananto Sukotjo	Reddist	1
+56	Aviariananto Sukotjo	Javacript	1
+56	Aviariananto Sukotjo	CI	1
+56	Aviariananto Sukotjo	Laravel	1
+57	Simson Panjaitan	React	1
+57	Simson Panjaitan	Reddist	1
+57	Simson Panjaitan	Firebase	1
+57	Simson Panjaitan	Laravel	1
+58	Marcellyna Junita Widjaja	Android	0
+58	Marcellyna Junita Widjaja	React	0
+58	Marcellyna Junita Widjaja	PHP	0
+58	Marcellyna Junita Widjaja	Javacript	0
+59	Hengky Tenacious	Javacript	1
+59	Hengky Tenacious	Firebase	1
+59	Hengky Tenacious	Laravel	1
+59	Hengky Tenacious	MySQL	1
+59	Hengky Tenacious	Flutter	1
+60	Goh Tie Sin	Javacript	2
+60	Goh Tie Sin	MongoDB	2
+60	Goh Tie Sin	Yii	2
+60	Goh Tie Sin	MySQL	2
+60	Goh Tie Sin	Firebase	2
+61	Oei Denny Kurniawan	Firebase	1
+61	Oei Denny Kurniawan	Yii	1
+61	Oei Denny Kurniawan	SQLite	1
+61	Oei Denny Kurniawan	Laravel	1
+61	Oei Denny Kurniawan	Android	1
+61	Oei Denny Kurniawan	MySQL	1
+62	Enny Soegiarto	SQLite	1
+62	Enny Soegiarto	Javacript	1
+62	Enny Soegiarto	Laravel	1
+62	Enny Soegiarto	ReactJS	1
+62	Enny Soegiarto	Yii	1
+62	Enny Soegiarto	MongoDB	1
+63	Suhadi Zaini	React	1
+63	Suhadi Zaini	PHP	1
+63	Suhadi Zaini	SQLite	1
+63	Suhadi Zaini	Android	1
